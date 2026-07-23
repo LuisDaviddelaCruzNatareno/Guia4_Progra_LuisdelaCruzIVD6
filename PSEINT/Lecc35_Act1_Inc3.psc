@@ -3,11 +3,11 @@ Algoritmo Lecc25_Act1_Inc3
 	Definir jugar Como Cadena
 	
 	Escribir "Nombre: Luis de la Cruz"
-	Escribir "Grado y sección: IVD"
+	Escribir "Grado y secciÃ³n: IVD"
 	Escribir "Clave: 6"
 	
 	Repetir
-		Escribir "Elija una opción:"
+		Escribir "Elija una opciÃ³n:"
 		Escribir "1. Piedra"
 		Escribir "2. Papel"
 		Escribir "3. Tijeras"
@@ -16,26 +16,26 @@ Algoritmo Lecc25_Act1_Inc3
 		pcComp <- Aleatorio(1, 3)
 		
 		Si pcComp = 1 Entonces
-			Escribir "La computadora eligió: Piedra"
+			Escribir "La computadora eligiÃ³: Piedra"
 		Sino
 			Si pcComp = 2 Entonces
-				Escribir "La computadora eligió: Papel"
+				Escribir "La computadora eligiÃ³: Papel"
 			Sino
-				Escribir "La computadora eligió: Tijeras"
+				Escribir "La computadora eligiÃ³: Tijeras"
 			FinSi
 		FinSi
 		
 		Si pcUsuario = pcComp Entonces
-			Escribir "¡Es un empate!"
+			Escribir "Â¡Es un empate!"
 		Sino
 			Si (pcUsuario = 1 Y pcComp = 3) O (pcUsuario = 2 Y pcComp = 1) O (pcUsuario = 3 Y pcComp = 2) Entonces
-				Escribir "¡Ganaste!"
+				Escribir "Â¡Ganaste!"
 			Sino
-				Escribir "¡Ganó la computadora!"
+				Escribir "Â¡GanÃ³ la computadora!"
 			FinSi
 		FinSi
 		
-		Escribir "¿Desea jugar de nuevo? (s/n):"
+		Escribir "Â¿Desea jugar de nuevo? (s/n):"
 		Leer jugar
 	Hasta Que jugar = "n" O jugar = "N"
 FinAlgoritmo
